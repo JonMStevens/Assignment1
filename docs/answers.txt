@@ -1,0 +1,41 @@
+a) 
+$ git push origin master
+Counting objects: 7, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 802 bytes | 72.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/JonMStevens/Assignment1.git
+fbdbe93..069d574  master -> master
+
+b) 9
+$ git rev-list --count master
+
+c) Wed Sep 27 16:31:42 2017
+$ git log -p .gitignore
+
+d) commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+
+e)	1) If you make a branch, change code, and then realize the code needs to be scrapped. 
+If you branch off, you still have the other branch of developement that does not contain your changes.
+
+  	2) If you're collaborating you can make a branch for your own developement. 
+Others can make their own changes and not be interrupted by the changes you made until you commit them.
+
+f) git log shows history of commits
+git status shows changes since last commit
+
+g) git log -- Weapon.h
+
+h) git log --grep="file"
+
+i) I) Inheritance means a class takes on properties of an existing class. 
+The class that is inheriting properties is usually a specific variety of the class it is inheriting from (e.g. class Watermelon inherits from class Fruit)
+
+II) Polymorphism is when a subclass specifies how a method that exists in the superclass works for in its specific case. 
+(e.g. subclass circle specificies that the function area in superclass shape returns pi * r * r)
+
+III) Encapsulation means only providing the information that someone needs to know to use a class or function or piece of code.
+They don't need to know the specifics of how it works.
