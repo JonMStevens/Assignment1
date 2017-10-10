@@ -6,7 +6,6 @@
  */
 
 #include <string>
-
 #ifndef WEAPON_H
 #define WEAPON_H
 
@@ -24,14 +23,14 @@ protected:
     /*
      * Weapon's hitpoints
      */
-    double hitPoints;    
+    double hitPoints;
 public:
     /**
      * 
      * @param name Weapon's name
      * @param hitPoints Weapon's hitpoints
      */
-    Weapon(std::string name, double hitPoints) : name(name), hitPoints(hitPoints){};
+    Weapon(std::string name, double hitPoints) : name(name), hitPoints(hitPoints){}
     /**
      * Detructor
      */

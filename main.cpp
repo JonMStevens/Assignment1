@@ -28,7 +28,10 @@ void simulateWeapon(Weapon * weapon, double armor) {
  * 
  */
 int main(int argc, char** argv) {
-    srand(time(NULL)); // seeding randoms delete this i think
+    /* rand() has to be seeded only once.
+     * Just did it in main because it only runs once and other things can run multiple times.
+     * Found on http://www.math.uaa.alaska.edu/~afkjm/csce211/handouts/RandomFunctions.pdf */
+    srand(time(NULL)); 
     double armor = 20;
 
     Weapon *weapon = WeaponFactory::getInstance()->getWeapon("sword");
@@ -44,6 +47,10 @@ int main(int argc, char** argv) {
     delete(weapon);
 
     weapon = WeaponFactory::getInstance()->getWeapon("crsword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("hammer");
     simulateWeapon(weapon, armor);
     delete(weapon);
 
