@@ -10,7 +10,7 @@
 #include <iostream>
 #include "Weapon.h"
 #include "WeaponFactory.h"
-
+#include "time.h"
 using namespace std;
 
 /**
@@ -28,7 +28,7 @@ void simulateWeapon(Weapon * weapon, double armor) {
  * 
  */
 int main(int argc, char** argv) {
-
+    srand(time(NULL)); // seeding randoms delete this i think
     double armor = 20;
 
     Weapon *weapon = WeaponFactory::getInstance()->getWeapon("sword");
@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon, armor);
     delete(weapon);
 
-    weapon = WeaponFactory::getInstance()->getWeapon("crs");
+    weapon = WeaponFactory::getInstance()->getWeapon("crsword");
     simulateWeapon(weapon, armor);
     delete(weapon);
 

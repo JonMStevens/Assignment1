@@ -12,8 +12,8 @@
 
 /**
 * Defines the behavior of a simple axe 
-(hitpoints = 60. If armor is greater than 0 and less than 20,
-the axe will ignore all the armor points.)
+* (hitpoints = 60. If armor is greater than 0 and less than 20,
+* the axe will ignore all the armor points.)
 */
 class SimpleAxe : public Weapon
 {

@@ -40,7 +40,7 @@ Weapon * WeaponFactory::getWeapon(std::string name)
         return new SimpleAxe();
     }
 
-    if (name.compare("crs") == 0)
+    if (name.compare("crsword") == 0)
     {
         return new CrazyRandomSword();
     }

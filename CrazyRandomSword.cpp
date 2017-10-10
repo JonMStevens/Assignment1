@@ -22,8 +22,6 @@ double min(double a, double b)
 
 double CrazyRandomSword::hit(double armor)
 {
-
-    srand(time(NULL));
     armor = armor - (rand() % ((int)(min(hitPoints, armor)) / 2));
 
     double damage = hitPoints - armor;
