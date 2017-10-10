@@ -39,3 +39,5 @@ II) Polymorphism is when a subclass specifies how a method that exists in the su
 
 III) Encapsulation means only providing the information that someone needs to know to use a class or function or piece of code.
 They don't need to know the specifics of how it works.
+
+7) RoleGame doesn't actually use polymorphism because no function in class weapon is actually dedefined in any derived class. It does use encapsulation because you don't need to know how weapons or weapon creation is implemented. To use RoleGame you only need to know how to call the neccessary functions and what parameters to use.
